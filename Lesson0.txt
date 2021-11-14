@@ -1,0 +1,116 @@
+
+ - Bitcoin, first protocols, to use the blockchain technology.
+ - p2p transactions in a decentralised manner.
+ - digital gold, it is scarce.
+ - Ethereum, released in 2016, smart contracts allow for agreements without centralized intermediaries.
+ - NICK SZABO int roduced smart contracts - these are self executing sets of instructions, without 3rd party intermediaries.
+ - smart contracts are entirely written in code, instead of writing the rules on the paper.
+ - bitcoin has also smart contracts, with gas limits ethereum could be considered incomplete, but you'll learn more on that later.
+ - smart contracts are revolutionary, but have flaw, the oracle problem, they are deterministic, everything that happens in a little box, they need real world data.
+ - oracles are the devices which bring data into the blockchain, smart contracts are decentralised, they want the data in a decentralised as well.
+ - there are hybrid smart contracts, chainlink comes into play here, hybrid smart contracts can interact with a centralised data.
+ - hybrid smart contracts, we are talking about smart contracts which an offchain component.
+ - understanding ethereum means we will understand the majority of these platforms.
+ - there are some blockchain platforms that do not use smart contracts.
+ - chainlinks is the most powerful oracle network.
+1. decentralised - there is no centralised source, node operators run the software that connect the blockchain together.
+2. Transparency and flexiblity - rules that are made are in public, there are no special information, everyone has to play by the same rules, but everything is not tracked, and it's pseudoanonymous.
+3. Speed and Efficiency - quick and Efficient, specially in monetary policy.
+4. Security and immutability - they can't be corrupted, the data is safe and secure with every node, even if 3-4 nodes go down, we have asset locked on the blockhain together.
+5. Removal of counterparty risk - allow us to move away from political brand based agreements to math based agreements.
+6. Trust minimized agreements - math based agreements, they are trustless, everyone knows what will be the output
+7. Hybrid smart contracts combine on and off-chain - paired with oracle.
+DAO - decentralised autonomous organisations, similar to regular organisations, they do all their governance on-chain.
+METMASK, etherscan, 
+
+concept | Can Access | Private or Public:
+Mnemonic| All of your accounts | Keep Private.
+Private Key | 1 of your accounts | Keep Private
+Public Address | Nothing | it's public.
+
+Testnets are free and for testing smart contracts whereas mainnet cost money and are considered "live"
+Faucet : Is an application that gives us free test tokens, like free test rinkeby ethereum.
+
+Block Explorer: An application that allows us to "view" transactions that happen on a blockchain.
+
+Gas: It is a unit of computational measure. The more computation a transaction uses the more "gas" you have to pay for.
+Evrey transaction that happens on-chain pays a "gas fee" to node operators.
+The amount of "gas" used and how much you pay depends on how "computationally expensive" your transaction is.
+Sending ETH to 1 address would be "cheaper" than sending ETH to 1000 addresses.
+
+Gas: Meaure of computation cost.
+Gas Price: How much it costs per unit of gas.
+Gas Limit: Max amount of gas in a transaction
+transaction Fee: Gas Used * Gas Price.
+ie. 21000 gas @ 1 GWEI per gas = 21000 GWEI.
+we have an option to change the price of the gas according to our needs, we can increase the cost of gas, and the transaction is faster.
+
+Hash: A unique fixed length string, meant to identify a piece of data. They are created by placing said data into a "hash function".
+
+A block consist of block no., nonce, and data, which are hashed together to get the hash with a required characteristic. The process of finding the nonce of the block so that the hash is satisfied is called mining.
+In a blockchain in addition to the attributes of the block we need to store the hash for the previous block as well, so that it forms a chain of blocks. And each blocks in addition to the block no., nonce and data hashes the previous hash as well.
+So any changes in the hash of the previous block, leads to changes in the hash of the next blocks as well, so if one transaction fails in between, then the others fail as well.
+This shows the property of immutability of the blockchain. Since no user can change the previous transaction since all others have the transactions stored already, and changing one transaction in the middle, all the transactions are to be changed.
+And the user can't change all the following transaction, since it's centrally available, and needs to match the existing ledgers, and to check the ledgers are in same all the time, we just check the hash for the last block.
+The first block is the genesis block, where the previous hash points to hash which does not exist.
+
+Mining: The process of finding the "solution" to the blockchain "problem".
+In our exampl, the "problem" was to find a hash that starts with four zeros.
+Nodes get paid for mining blocks.
+
+Block: a list of transactions mined together.
+Nonce: the "number used once" to find the solution to the blockchain problem.
+It's also used to define the transaction number for an account/address.
+
+Private Key: Only known to the key holder, it's use to "sign" transactions.
+Public Key: we want everyone to access our public key, people can verify us with the help of public key.
+Public key is derived from our private key. Anyone can "see" it, and use it to verify that a transaction came from you.
+
+Signing a transaction: A "onw way" process. Someone with a private key signs a transaction by their private key being hashed with their transaction data.
+Anyone can then verify this new transaction hash with your public key.
+
+Node: a single instanc in a decentralised network.
+anyone can join the network and form a node for themselves.
+Private Key ||| > Public key > Address.
+We now know how to interact with ethereum with this much knowledge.
+We go under the hood in the next lesson, ie. the next branch.
+
+blockchains are resilient - so long there is at least one node, the system is intact, and the nodes can't change the blockchain, it's punishable in some systems as well.
+Blockchain nodes keep lists of the transactions that occur.
+Blockchain is a decentralised database with ethereum it can do computations.
+
+Consensus - proof of work and proof of stake.
+Consensus is the mechanism used to agree on the state of a blockchain. this is where all the nodes agree with the new block adding up.
+it consist of two parts: 1) Chain selection. 2) Sybil resistance.
+1) mining work is sybil resistance mechanism.
+
+proof of work is the sybil resistance - it is done to know who is the author of the block, who is the miner essentially. It's the ability to resist users from creating pseudoanonymous identities and have an influence on the blockchain.
+Proof of work - no matter how many accounts you make, each one needs to do the proof of work.
+
+chain selection rule: Nakamoto Consensus - whichever blockchain has the most blocks, is the chain of the use.
+block confirmations - the number of blocks added after a transaction in the longest chain.
+this has recently changed as of EIP 1559.
+in the proof of work system all the nodes are fighting against each other to find the answer to the blockchain riddle. Proof of work uses a lot of energy.
+a miner can be paid in two different ways:
+1) transaction fee
+2) block reward - from the blockchain itself, it is been cut in half roughly every four years.
+gas fees are paid by whoever makes the transaction.
+
+sybil attack - using pseudoanonymous nodes, on bitcoin and ethereum is really difficult.
+51% attack, 
+
+proof of stake nodes put up collateral as a sybil resistance mechanism.
+validators - miners are called validators, nodes are randomly chosen to propose the block.
+randomness - blockchains are deterministic, and can't have random numbers, 
+pros - uses much less energy, 
+cons - less decentralised network.
+scalability - gas prices can get really high, when a lot of people the gas prices rocket up.
+sharding - a sharded blockchain is blockchain of blockchains.
+Layer 1 - base layer blockchain implementation. bitcoin, ethereum.
+Layer 2 - application built on layer 2. arbitrum, and optimism.
+Rollups - kind of like sharded chain, derive security from base layer.
+
+side chains derive their security from protocols.
+ETH and BTC are proof of work base.
+
+In Lesson 1 we jump into some solidity code, to build our own blockchain.
