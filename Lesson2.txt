@@ -1,0 +1,6 @@
+The Storage Factory:
+ - the factory pattern of smart contracts.
+ - we can import different contracts into a single contract.
+ - ABI - application binary interface.
+ - inheritance can be done using the "is" keyword.
+ 
