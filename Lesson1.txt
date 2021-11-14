@@ -1,0 +1,38 @@
+Course Layout:
+ - Remix, IDE.
+ - we work on the remix ide from here.
+ - defining your solidity version.
+ - solidity is constantly updating, and there are many versions.
+ - contract is like a class in an OOPS language.
+ - types and declaring variables in solidity:
+    - integers - uint, int, uint256, etc.
+    - boolean - bool
+    - string
+    - int256 - 
+    - address - ethereum address
+    - bytes32 -
+    - Array: A way of storing a list of an object or type.
+    - structs - for one more objects, like in cpp. 
+    - mappings - for storing key:value pair like a dictionary.
+    - more of this is present in the solidity documentation.
+    - the default initialization of the variables is like in java ie. NULL values.
+ - comments are like //
+ - functions are self defined modules.
+    function store(uint256 _favoriteNumber) public {
+        favoriteNumber = _favoriteNumber;
+    }
+ - calling a public-state changing function.
+ - Errors:
+    - Compiler error: your code will not deploy.
+    - red == Compiler error.
+    - compiler warnings: a helpful tip that something might be "off" but won't stop you from compiling.
+    - Yellow == Compiler Warning.
+ - keywords:
+    - memory - only stored in the memory during the execution time.
+    - storage - stored in an actual physical space, exists even after the function executes.
+    - strings are actually an object - an array of bytes, so we need to give it the keyword of storage or memory.
+ - SPDX license identifier: 
+    - solidity, found out that, license identifier can be important to check if the source code is good hands.
+ - Deploying a "live" network, "Live" means "mainnet" or testnet.
+ - All the solidity was compiled down to EVM, all the solidity can still compile down to the EVM. - the ethereum virtual machine.
+ 
